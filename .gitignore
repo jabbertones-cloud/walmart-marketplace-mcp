@@ -1,0 +1,14 @@
+node_modules
+dist
+.env
+.env.local
+.env.*.local
+.env.deploy
+*.log
+*.tsbuildinfo
+.DS_Store
+reports/
+out/
+
+# Operational scripts (brand-specific, hardcoded paths — not part of the generic MCP)
+scripts/
