@@ -43,9 +43,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({ tools: ALL_TOOLS
 
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args = {} } = request.params;
-  const creds = getCreds();
-
   try {
+    if (!ITEM_TOOL_NAMES.has(name) && !INVENTORY_TOOL_NAMES.has(name) && !ORDER_TOOL_NAMES.has(name)) {
+      return { content: [{ type: 'text', text: `Unknown tool: ${name}` }], isError: true };
+    }
+    const creds = getCreds();
     let result: unknown;
 
     if (ITEM_TOOL_NAMES.has(name)) {
