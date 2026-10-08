@@ -8,7 +8,8 @@
     "build": "pnpm -r --filter './packages/*' build",
     "dev": "pnpm -r --filter './packages/*' --parallel dev",
     "typecheck": "pnpm -r --filter './packages/*' typecheck",
-    "mcp:stdio": "tsx packages/mcp/src/index.ts"
+    "mcp:stdio": "tsx packages/mcp/src/index.ts",
+    "test": "pnpm -r --filter './packages/*' test"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",

@@ -11,7 +11,8 @@
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "tsx --test \"test/*.test.ts\""
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.30.0",
