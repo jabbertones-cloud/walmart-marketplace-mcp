@@ -15,11 +15,11 @@
     "test": "tsx --test \"test/*.test.ts\""
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.30.0",
-    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@anthropic-ai/sdk": "^0.132.1",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "@walmart-mcp/core": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.9.3"
   }
 }
